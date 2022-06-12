@@ -1,0 +1,198 @@
+/*Main configuration*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*HERO*/
+body {
+    background: rgb(255,204,0);
+    background: linear-gradient(0deg, rgba(255,204,0,0) 79%, rgba(255,204,0,0.30645161290322576) 100%);
+}
+
+.hero-image{
+    z-index:10;
+    transform: translate(-50%,-50%);
+}
+
+.hero-image-background{
+    
+}
+
+
+
+.circle-1{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform:translate(0%,0%);
+    position: absolute;
+    top: 0%;
+    border: 1px solid rgba(255, 255, 0, 0.877);
+    border-radius:100%;
+    animation-name: circle1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.circle-2{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform:translate(0%,0%);
+    position: absolute;
+    top: 0%;
+    border: 1px solid rgba(255, 255, 0, 0.89);
+    border-radius:100%;
+    animation-name: circle1;
+    -webkit-animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle1 {
+    0%{
+        transform:translate(0%,0%);
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 0.6;
+    }
+    
+    100%{
+        transform:translate(-16%,-16%);
+        width: 150%;
+        height: 150%;
+        opacity:0;
+    }
+}
+
+.hero-floating-ingredient{
+    position:absolute;
+    width: 70px;
+}
+
+.hero-floating-ingredient-1{
+    top:0;
+
+    animation-name: floating-ingredient;
+    -webkit-animation-duration: 1s;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+ 
+
+.hero-floating-ingredient-2{
+    top:0;
+    right:0;
+
+    animation-name: floating-ingredient-2;
+    -webkit-animation-duration: 1s;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+
+.hero-floating-ingredient-3{
+    transform-origin: center center;
+    animation-name: floating-ingredient-2;
+    -webkit-animation-duration: 1s;
+    animation-duration: 4s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    bottom:0;
+    right:0;
+}
+.hero-floating-ingredient-4{
+    motion-path: path("m95.88017,163.52735c14.70582,-1.17647 -0.58823,44.70569 -13.52935,25.29401c-12.94112,-19.41168 -1.17647,-24.11754 13.52935,-25.29401z");
+    offset-path:path("m95.88017,163.52735c14.70582,-1.17647 -0.58823,44.70569 -13.52935,25.29401c-12.94112,-19.41168 -1.17647,-24.11754 13.52935,-25.29401z");
+    transform-origin: center center;
+   
+motion-rotation:initial;
+    animation-name: floating-ingredient-4;
+    -webkit-animation-duration: 1s;
+    animation-duration: 4s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    bottom:10%;
+    left:0;
+}
+@keyframes floating-ingredient-4{
+
+    100%{
+        motion-offset: 100%;
+        offset-distance: 100%;
+    }
+
+}
+
+@keyframes floating-ingredient{
+    20%{
+        transform:translate(-10px,30px)   
+      }
+      50%{
+        transform:translate(-20px,20px)   
+      }
+      70%{
+        transform:rotate(5deg) translate(-21px,19px)   
+      }
+      80%{
+        transform:rotate(4deg)  translate(-26px,20px)   
+      }
+}
+
+@keyframes floating-ingredient-2{
+    20%{
+        transform:translate(5px,5px)   
+      }
+    
+      70%{
+        transform:rotate(-5deg) translate(0px,0px)   
+      }
+
+       
+      75%{
+        transform:rotate(-5deg) translate(0px,0px)   
+      }
+
+
+    
+
+
+}
+
+@keyframes floating-ingredient-3{
+     20%{
+        transform:rotate(-5deg) translate(5px,2px)   
+      }
+    
+      70%{
+        transform:rotate(0deg) translate(0px,0px)   
+      }
+
+    
+      80%{
+        transform: rotate(-10deg) translate(4px,4px)   
+      }
+
+
+}
