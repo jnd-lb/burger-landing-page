@@ -1,9 +1,67 @@
-/*Main configuration*/
+/*-------------------
+| Main configuration
+---------------------*/
 
 html {
     scroll-behavior: smooth;
 }
 
+
+
+section{
+    height: 100vh;
+}
+
+
+/*-------------------
+| SHORTCUTS
+---------------------*/
+
+/* Sizes */
+.w-110{
+    width: 110% !important;
+}
+.w-120{
+    width: 110% !important;
+}
+/* Shapes */
+.circle{
+    border-radius:100%;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.translate-center{
+    transform:  translate(-50%,-50%);
+}
+
+.w-fit-content{
+    width: fit-content !important;
+}
+
+
+/*Text*/
+.no-break{
+    white-space: nowrap;
+}
+
+/*-------------------
+| Custom Styling
+---------------------*/
+
+
+/*Overriding bootstrap behaviour*/
+.g-md-6,
+.gx-md-6 {
+    --bs-gutter-x: 10rem;
+  }
+
+  /* Nav */
+
+  .nav-floating{
+      box-shadow: 0px 0px 8px #00000038;
+      background-color: white !important;
+  }
 
 /*HERO*/
 body {
@@ -174,9 +232,7 @@ motion-rotation:initial;
         transform:rotate(-5deg) translate(0px,0px)   
       }
 
-
     
-
 
 }
 
@@ -195,4 +251,70 @@ motion-rotation:initial;
       }
 
 
+}
+
+
+/*--------------------------------
+|    SECTION SEPRATOR
+----------------------------------*/
+
+.section-separator{
+    width: 100%;
+    height: 1px;
+    position: relative;
+}
+
+.section-separator img{
+    position: absolute;
+    top: 0; 
+}
+
+.section-separator-right img{
+    transform: translate(50%,-50%);
+    right:0;
+}
+
+.section-separator-left img{
+    transform: translate(-50%,-50%);
+    left:0;
+}
+
+
+/*--------------------------------
+| Features Categories
+--------------------------------*/
+.features-card-container{
+    perspective: 800px;
+}
+
+.card-image{
+    margin-top:-40%;
+    transition:all 0.3s ease;
+}
+
+.features-card{
+    box-shadow: 0px 0px 47px -8px #ffc23d79;
+    padding: 3.5rem;
+    border:1px solid rgba(0, 0, 0, 0.014);
+    border-top: 0px;
+    border-right:0px ;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.features-card:hover{
+    box-shadow: -10px 10px 47px -8px #ffc23d79;
+    transform: rotate3d(1, 1, 1, 6deg);
+    border: 1px solid #c7c7c74f;
+    border-top:0px;
+    border-right:0px;
+
+}
+
+
+.features-card:hover > .card-image{
+    box-shadow: -1px 1px 2px #0000006b;
+    transform:translate(2px, -2px);
+    
 }
