@@ -436,7 +436,7 @@ motion-rotation:initial;
 
 /*Testimonial Section*/
 .testimonial-image{
-    background-image: url(../assets/images/guy-like.png);
+    background-image: url(../../assets/images/guy-like.png);
     background-repeat: no-repeat;
     background-position:center;
     background-size:contain;
