@@ -7,7 +7,7 @@ let name = $("#testimonial-author");
 let title = $("#testimonial-title");
 
 //data 
-  $.getJSON('./data.json', function(_data) {
+  $.getJSON('./js/data.json', function(_data) {
     //TODO handle errors
     data = _data;
     updateTestimonial(0);
