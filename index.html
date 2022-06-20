@@ -5,13 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Jquery-->
+    <script src="./libraries/jquery/jquery.min.js"></script>
+
     <!--Bootstrap-->
-    <link rel="stylesheet" type="text/css" href="./libraries/bootstrap-5.0.2-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./libraries/bootstrap-5.0.2-dist/css/bootstrap.css"/>
     <script src="./libraries/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="/libraries/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/libraries/slick/slick-theme.css"/>
+
 
     <!--Cusom styling-->
     <link rel="stylesheet" href="./css//main.css" type="text/css"/>
 
+    <!--Custom Jquery -->
+    <script src="./js/script.js"></script>
     <!--SEO Metadata-->
 
 
@@ -32,13 +43,13 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#testimonial">Testimonial</a>
               </li>
             </ul>
           </div>
@@ -46,49 +57,54 @@
       </nav>
 
     <!--Hero-->
-    <section class="hero container py-5  ">
+    <section id="home" class="hero container py-5  ">
         <div class="row">
-            <div class="col-md-7">
-                <h1 class="display-1 fw-bolder mb-4">TASTY BURGER</h1>
-                <p class="mb-5 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="btn px-5 py-3 btn-warning text-dark rounded-pill ">Learn more</button>
-            </div>
 
             <!-- HERO IMAGE -->
-            <div class="col-md-5">
-                <div style="width: 100%; padding-top: 100%;" class="position-relative d-block">
-                    <img class="hero-image w-100 position-absolute top-50 start-50" src="./assets//images//burger.png"/>
-                    <div class="hero-image-background w-100 h-100 bg-warning position-absolute top-0 start-0 rounded-circle"></div>
-                    <div class="circle-1"></div>
-                    <div class="circle-2"></div>
-
-                    <!--FLOATING INGREDIENT-->
-                    <img class="hero-floating-ingredient hero-floating-ingredient-1" src="./assets/images/lettuce.png"/>
-                    <img class="hero-floating-ingredient hero-floating-ingredient-2" src="./assets/images/tomato.png"/>
-                    <img class="hero-floating-ingredient hero-floating-ingredient-3" src="./assets/images/pepper-green.png"/>
-                    <img class="hero-floating-ingredient hero-floating-ingredient-4" src="./assets/images/pepper.png"/>
+            <div class="col-md-5 order-1 order-md-2 mb-md-0 mb-4" >
+                <!--The following div is to controle the image responsive width-->
+                <div class="w-md-60 mx-auto mb-0 mb-sm-4">
+                        <div style="padding-top: 100%;" class="w-100 position-relative d-block">
+                            <img class="hero-image w-100 position-absolute top-50 start-50" src="./assets//images//burger.png"/>
+                            <div class="hero-image-background w-100 h-100 bg-warning position-absolute top-0 start-0 rounded-circle"></div>
+                            <div class="circle-1"></div>
+                            <div class="circle-2"></div>
+        
+                            <!--FLOATING INGREDIENT-->
+                            <img class="hero-floating-ingredient hero-floating-ingredient-1" src="./assets/images/lettuce.png"/>
+                            <img class="hero-floating-ingredient hero-floating-ingredient-2" src="./assets/images/tomato.png"/>
+                            <img class="hero-floating-ingredient hero-floating-ingredient-3" src="./assets/images/pepper-green.png"/>
+                            <img class="hero-floating-ingredient hero-floating-ingredient-4 d-none d-md-block" src="./assets/images/pepper.png"/>
+                        </div>
                 </div>
+            </div>
+            <div class="position-relative col-md-7 order-2 order-xl-1 text-md-start text-center d-md-flex justify-content-center flex-column">
+                <h1 class="display-1 fw-bolder mb-4 z-index-2">TASTY BURGER</h1>
+                <p class="mb-5 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="btn px-5 py-3 btn-warning text-dark rounded-pill w-fit-content mb-5">Learn more</button>
             </div>
         </div>
     </section>
 
     <!--Seperator - Fries - left-->
-    <div class="section-separator section-separator-left w-100">
-        <img class="" src="./assets/images/frensh-fries.png"/>
+    <div class="section-separator section-separator-left">
+        <img class="w-100" src="./assets/images/frensh-fries.png"/>
     </div>
 
     <!-- First Section -->
-    <section class="container">
+    <section class="container py-4 ">
         <div class="row g-md-6">
             <!--Burguer image-->
             <div class="col-md-6">
-                <div class="circle bg-warning position-relative">
-                    <img height="95%" class="position-absolute top-50 start-50 translate-center" src="./assets/images/burger-open.png" alt="" srcset="">
+                <div class="w-md-60 mx-auto mb-4 mb-md-0">
+                    <div class="circle bg-warning position-relative">
+                        <img height="95%" class="position-absolute top-50 start-50 translate-center" src="./assets/images/burger-open.png" alt="" srcset="">
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 d-flex justify-content-center flex-column">
-                <h1 class="display-3 fw-bolder  mb-4">Taste the best buger</h1>
-                <p class="mb-5 fw-light">Cillum proident quis Lorem non veniam minim eu occaecat eu ex aute est nisi voluptate.</p>
+            <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+                <h1 class="display-3 fw-bolder  mb-4 text-center">Taste the best buger</h1>
+                <p class="mb-5 fw-light text-center text-md-start">Cillum proident quis Lorem non veniam minim eu occaecat eu ex aute est nisi voluptate.</p>
                 <button class="btn px-5 py-3 btn-warning text-dark rounded-pill w-fit-content">Learn more</button>
             </div>
         </div>
@@ -96,147 +112,289 @@
 
 
     <!--Seperator - Crispy - right-->
-    <div class="section-separator section-separator-right w-100">
-        <img class="" src="./assets/images/crisspy.png"/>
+    <div class="d-none d-md-block section-separator section-separator-right w-100">
+        <img class="py-4" src="./assets/images/latuce.png"/>
     </div>
 
 
-    <section class="container">
-        <div class="mb-5 d-flex align-items-center justify-content-center">
-            <h1 class="display-6 fw-bolder mb-5">Features Categories</h1>
+    <section id="features" class="py-5 h-fit-content">
+        <h1 class="display-6 fw-bolder mb-5 w-100 text-center">Features Categories</h1>
+        
+        <!--Hidden on mobile-->
+        <!--Cards (Tab and deskop only)-->
+        <div class="container">
+            <div class="d-none d-md-flex row g-md-5 pt-4 mt-5">
+                <!-- Feature 1 -->
+                <div class="col-md-4 features-card-container">
+                    <div class="features-card">
+                        <!--image-->
+                        <div class="card-image bg-warning circle position-relative mb-4">
+                            <img class="w-120 position-absolute start-50 top-50 translate-center" src="./assets/images/burger.png"/>
+                        </div>
+                        <h2 class="fs-4 text-center fw-bolder no-break mb-2">Cheezy Burguer</h2>
+                        <!-- Rating -->
+                        <div class="d-flex align-items-center justify-content-around px-5 mb-3">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                        </div>
+    
+                        <p class="fs-4 w-100 text-center fs-3 mb-3">
+                            $5
+                        </p>
+    
+                        <button class="fs-bold w-100 btn btn-warning py-3">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Feature 2 -->
+                <div class="col-md-4 features-card-container">
+                    <div class="features-card">
+                        <!--image-->
+                        <div class="card-image bg-warning circle position-relative mb-4">
+                            <img class="w-120 position-absolute start-50 top-50 translate-center" src="./assets/images/burger.png"/>
+                        </div>
+                        <h2 class="fs-4 text-center fw-bolder no-break mb-2">Cheezy Burguer</h2>
+                        <!-- Rating -->
+                        <div class="d-flex align-items-center justify-content-around px-5 mb-3">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                        </div>
+    
+                        <p class="fs-4 w-100 text-center fs-3 mb-3">
+                            $5
+                        </p>
+    
+                        <button class="fs-bold w-100 btn btn-warning py-3">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+    
+                <!--Feature 3-->
+                <div class="col-md-4 features-card-container">
+                    <div class="features-card">
+                        <!--image-->
+                        <div class="card-image bg-warning circle position-relative mb-4">
+                            <img class="w-120 position-absolute start-50 top-50 translate-center" src="./assets/images/burger.png"/>
+                        </div>
+                        <h2 class="fs-4 text-center fw-bolder no-break mb-2">Cheezy Burguer</h2>
+                        <!-- Rating -->
+                        <div class="d-flex align-items-center justify-content-around px-5 mb-3">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                            <img src="./assets//images/start.png" alt="" srcset="">
+                        </div>
+    
+                        <p class="fs-4 w-100 text-center fs-3 mb-3">
+                            $5
+                        </p>
+    
+                        <button class="fs-bold w-100 btn btn-warning py-3">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!--Cards-->
-        <div class="row g-md-5 pt-1">
-            <!-- Feature 1 -->
-            <div class="col-md-4 features-card-container">
-                <div class="features-card">
-                    <!--image-->
-                    <div class="card-image bg-warning circle position-relative mb-4">
-                        <img class="w-120 position-absolute start-50 top-50 translate-center" src="./assets/images/burger.png"/>
-                    </div>
-                    <h2 class="fs-4 text-center fw-bolder no-break mb-2">Cheezy Burguer</h2>
-                    <!-- Rating -->
-                    <div class="d-flex align-items-center justify-content-around px-5 mb-3">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
+        <!--Cards (Mobile only)-->
+        <div class="mobile-features-card-container d-md-none d-sm-block">   
+            <div class="container p-5">
+                <div class="your-class">
+                    <!--Feature 1-->
+                    <div class="features-card-container d-flex justify-content-center">
+                        <div class="features-card bg-light w-sm-80">
+                            <!--image-->
+                            <div class="card-image bg-warning circle position-relative mb-4">
+                                <img class="w-120 position-absolute start-50 top-50 translate-center" src="./assets/images/burger.png"/>
+                            </div>
+                            <h2 class="fs-6 text-center fw-bolder no-break mb-2">Cheezy Burguer</h2>
+                            <!-- Rating -->
+                            <div class="d-flex align-items-center justify-content-around px-5 mb-3">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                            </div>
+        
+                            <p class="fs-4 w-100 text-center fs-3 mb-3">
+                                $5
+                            </p>
+        
+                            <button class="fs-bold w-100 btn btn-warning py-3">
+                                Buy Now
+                            </button>
+                        </div>
                     </div>
 
-                    <p class="fs-4 w-100 text-center fs-3 mb-3">
-                        $5
-                    </p>
+                    <!--Feature 2-->
+                    <div class="features-card-container d-flex justify-content-center">
+                        <div class="features-card bg-light w-sm-80">
+                            <!--image-->
+                            <div class="card-image bg-warning circle position-relative mb-4">
+                                <img class="w-120 position-absolute start-50 top-50 translate-center" src="./assets/images/burger.png"/>
+                            </div>
+                            <h2 class="fs-6 text-center fw-bolder no-break mb-2">Cheezy Burguer</h2>
+                            <!-- Rating -->
+                            <div class="d-flex align-items-center justify-content-around px-5 mb-3">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                            </div>
+        
+                            <p class="fs-4 w-100 text-center fs-3 mb-3">
+                                $5
+                            </p>
+        
+                            <button class="fs-bold w-100 btn btn-warning py-3">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!--Feature 3 -->
+                    <div class="features-card-container d-flex justify-content-center">
+                        <div class="features-card bg-light w-sm-80">
+                            <!--image-->
+                            <div class="card-image bg-warning circle position-relative mb-4">
+                                <img class="w-120 position-absolute start-50 top-50 translate-center" src="./assets/images/burger.png"/>
+                            </div>
+                            <h2 class="fs-6 text-center fw-bolder no-break mb-2">Cheezy Burguer</h2>
+                            <!-- Rating -->
+                            <div class="d-flex align-items-center justify-content-around px-5 mb-3">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                                <img src="./assets//images/start.png" alt="" srcset="">
+                            </div>
+        
+                            <p class="fs-4 w-100 text-center fs-3 mb-3">
+                                $5
+                            </p>
+        
+                            <button class="fs-bold w-100 btn btn-warning py-3">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>
 
-                    <button class="fs-bold w-100 btn btn-warning py-3">
-                        Buy Now
-                    </button>
+
+
+
+    <!--Testimonial-->
+    <section id="testimonial" class="container d-flex align-items-center py-5 mt-5">
+        
+        <div class="d-block w-100">
+            <h1 class="display-6 fw-bolder mb-5 w-100 text-center">What People Are Saying</h1>
+            <div class="row g-md-6">
+
+                <!--Image | Desktop and tab -->
+                <div class="col-md-6  d-none d-md-block">
+                    <div class="testimonial-image bg-warning circle"></div>
+                </div>
+                
+                <!--Paragraph-->
+                <div class="col-md-6 col-sm-12 text-dark">
+                    <!--Backquote icons-->
+                    <div class="testimonial-quote-icons mb-5">
+                        <img src="./assets//images//quote-icon.png" />
+                        <img src="./assets//images//quote-icon.png" />
+                    </div>
+                    <div class="testimonial-text">
+                        <p class="fs-5 mb-5 fw-light" id="testimonial-text"></p>
+                        <p class="fs-5" id="testimonial-author"></p>
+                        <p class="fs-6" id="testimonial-title"></p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Feature 2 -->
-            <div class="col-md-4 features-card-container">
-                <div class="features-card">
-                    <!--image-->
-                    <div class="card-image bg-warning circle position-relative mb-4">
-                        <img class="w-120 position-absolute start-50 top-50 translate-center" src="./assets/images/burger.png"/>
-                    </div>
-                    <h2 class="fs-4 text-center fw-bolder no-break mb-2">Cheezy Burguer</h2>
-                    <!-- Rating -->
-                    <div class="d-flex align-items-center justify-content-around px-5 mb-3">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                    </div>
-
-                    <p class="fs-4 w-100 text-center fs-3 mb-3">
-                        $5
-                    </p>
-
-                    <button class="fs-bold w-100 btn btn-warning py-3">
-                        Buy Now
-                    </button>
+        </div>
+    </section>
+    <section class="container d-flex align-items-center justify-content-center ">
+        <div class="bg-warning p-6 w-100  text-center">
+            <h3 class="fw-bold display-6">Download The App Today</h3>
+            <p class="fw-light">Download our app from playstore and apple store today</p>
+            <div class="row">
+                <div class="col-md-3 offset-md-3">
+                    <img class="" src="./assets/images/apple-store.png" alt="" srcset="">
                 </div>
-            </div>
-
-            <!--Feature 3-->
-            <div class="col-md-4 features-card-container">
-                <div class="features-card">
-                    <!--image-->
-                    <div class="card-image bg-warning circle position-relative mb-4">
-                        <img class="w-120 position-absolute start-50 top-50 translate-center" src="./assets/images/burger.png"/>
-                    </div>
-                    <h2 class="fs-4 text-center fw-bolder no-break mb-2">Cheezy Burguer</h2>
-                    <!-- Rating -->
-                    <div class="d-flex align-items-center justify-content-around px-5 mb-3">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                        <img src="./assets//images/start.png" alt="" srcset="">
-                    </div>
-
-                    <p class="fs-4 w-100 text-center fs-3 mb-3">
-                        $5
-                    </p>
-
-                    <button class="fs-bold w-100 btn btn-warning py-3">
-                        Buy Now
-                    </button>
+                <div class="col-md-3">
+                    <img src="./assets/images/google-play.png" alt="" srcset="">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container py-5 bg-warning d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
-    <section class="container py-5 bg-gradient d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
-    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
-    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
-    <section id="here" class="container py-5 bg-danger d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
-    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
-    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
-    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
-    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
-    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
-    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
-    <section class="container py-5 bg-primary d-flex align-items-center justify-content-center">
-        <p>dsds</p>
-    </section>
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-md-3">
+                <!--LOGO-->
+                <div class="mb-4">
+                    <a class="navbar-brand" href="#">
+                        <b class="text-warning">Cheezy</b>
+                        <span class="text-dark">Bites</span>
+                    </a>
+                </div>
+                <p class="fw-light">Adipisicing adipisicing et laborum tempor aliqua incididunt qui ea id. Dolor laborum est nisi proident aliquip. Tempor sunt id magna dolore aute commodo.</p>
+            </div>
+            <div class="col-md-3">
+                <h4 class="mb-4">Quick Links</h4>
+                <ul class="list">
+                    <li class="list">
+                        <a class="text-dark fw-light text-decoration-none" href="#">About us</a>
+                    </li>
+                    <li>
+                        <a class="text-dark fw-light text-decoration-none" href="#">Categories</a>
+                    </li>
+                    <li>
+                        <a class="text-dark fw-light text-decoration-none" href="#">Find A job</a>
+                    </li>
+                    <li>
+                        <a class="text-dark fw-light text-decoration-none" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4 class="mb-4">Quick Links</h4>
+                <ul class="list">
+                    <li class="list">
+                        <a class="text-dark fw-light text-decoration-none" href="#">About us</a>
+                    </li>
+                    <li>
+                        <a class="text-dark fw-light text-decoration-none" href="#">Categories</a>
+                    </li>
+                    <li>
+                        <a class="text-dark fw-light text-decoration-none" href="#">Find A job</a>
+                    </li>
+                    <li>
+                        <a class="text-dark fw-light text-decoration-none" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </footer>
+
+
+<!--Slick-->
+<script type="text/javascript" src="./libraries/slick/slick.min.js"></script>
 
 </body>
 </html>
