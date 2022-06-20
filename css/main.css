@@ -428,7 +428,7 @@ motion-rotation:initial;
 /* Mobile Features */
 .mobile-features-card-container{
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.2) 100%),  url(../assets/images/family.jpg);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.2) 100%),  url(../../assets/images/family.jpg);
     background-size: cover;
     background-position: top;
     background-color: var(--yellow);
